@@ -22,8 +22,10 @@ module.exports = {
         
         //se o name for nulo ele pega o valor do
         //login, que é obrigatório no github
-        const {name = login, avatar_url, bio} = apiResponse.data;
-            
+        console.log(apiResponse.data);
+        console.log(apiResponse.data.name);
+        const { name = login, avatar_url, bio} = apiResponse.data;
+                
     
         const techsArray = parseStringAsArray(techs);
     
